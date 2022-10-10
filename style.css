@@ -1,0 +1,26 @@
+.mask{
+    height: 654px;
+  }
+.facts-section{
+    background-attachment: fixed;
+}
+.night-cta{
+    background-attachment: fixed;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 90% !important;
+    width: 90%;
+}
+.bg-color{
+    background-color: rgb(59, 20, 20);
+    color: white;
+}
+.bg-color-2{
+    background-color: rgb(60, 17, 125);
+    color: white;
+}
+.about-build{
+    height: 75vh !important;
+}
