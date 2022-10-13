@@ -26,36 +26,33 @@
     <!-- Navbar -->
   
 
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
 
-    <nav class="navbar navbar-expand-sm neg_padding pt-4 ">
+      </div>
+    </div>
+
+    <nav class="navbar navbar-expand-sm " id="navbar">
       <div class="container bottombar">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto align-items-center">
     
             <li class="nav-item sidebar">
-              <a href="#" class="navbar-brand ">WAPIK</a>
+              <a href="#" class="navbar-brand ">SalesForceTower</a>
             </li>
            
           </ul>
         </div>
   
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+       
+        <span class="white" style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
   
-        <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a href="/index.html" class="nav-link links"><i class="bi bi-list"></i></a>
-            </li>
-        
-          </ul>
-        </div>
+       
       </div>
     </nav>
   
@@ -90,9 +87,9 @@
           <div class="text-white col-md-12 ">
             <h1 class="mb-1 h1_header">Welcome to the Wapik</h1>
             <div class="row py-5 ">
-              <div class="col-4"><h3>198</h3><p>Customers Served</p></div>
-              <div class="col-4"><h3>8</h3><p>Business Of The year</p></div>
-              <div class="col-4"><h3>55</h3><p>Total Best Ever</p></div>
+              <div class="col-md-4"><h3>198</h3><p>Customers Served</p></div>
+              <div class="col-md-4"><h3>8</h3><p>Business Of The year</p></div>
+              <div class="col-md-4"><h3>55</h3><p>Total Best Ever</p></div>
             </div>
             <button class="btn">Read More</button>
           </div>
@@ -116,11 +113,11 @@
       </section>
       <section class="section5">
         <div class="row p-5">
-          <div class="col-6 text">
+          <div class="col-md-6 text">
             <h1 class="">Above It All</h1>
             <p class="span">WATCH OUR STORY</p>
           </div>
-            <div class="col-6">
+            <div class="col-md-6">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
@@ -148,10 +145,10 @@
 
       <section class="section6">
         <div class="row about-build">
-            <div class="col-6 g-0">
+            <div class="col-md-6 g-0">
                 <img src="img/fun-facts-background-1.jpg" width="100%" height="100%" >
             </div>
-            <div class="col-6 bg-color px-5 text">
+            <div class="col-md-6 bg-color px-5 text">
                 <h1>The Build</h1>
                 <p>The Gondola provides direct access up to Salesforce Park from Salesforce Plaza. There is no onboarding from the Park, so all guests must board from Salesforce Plaza.</p>
                 <p class="span">Building</p>
@@ -161,75 +158,82 @@
       <section class="section6">
         <div class="row about-build">
             
-            <div class="col-6 bg-color-2 px-5 text bg-blue">
+            <div class="col-md-6 bg-color-2 px-5 text bg-blue">
                 <h1>The Build</h1>
                 <p>The Gondola provides direct access up to Salesforce Park from Salesforce Plaza. There is no onboarding from the Park, so all guests must board from Salesforce Plaza.</p>
                 <p class="span">Building</p>
             </div>
-            <div class="col-6 g-0">
+            <div class="col-md-6 g-0">
                 <img src="img/construction-worker-s-meeting.jpg" width="100%" height="100%" >
             </div>
         </div>
       </section>
       
-<!-- Remove the container if you want to extend the Footer to full width. -->
-<div class="">
-
-    <footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4 footer">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item"><a href="#">Library</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Data</li>
-            </ol>
-          </nav>
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-facebook"></i
-        ></a>
-  
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-twitter"></i
-        ></a>
-  
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-google"></i
-        ></a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-instagram"></i
-        ></a>
-  
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-linkedin"></i
-        ></a>
-  
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fa fa-github"></i
-        ></a>
+      <section class="text-center footer-section">
+        <div class=" bg-image facts-section" style="background-image: url('/img/footer-background.jpg'); background-repeat: none; background-size: cover; ">
+        <div class="footer" style="background-color: rgba(15, 16, 16, 0.206);">
+        <div class="d-flex  align-items-center h-100 ">
+          <div class="text-white col-md-12 py-5">
+            <h6 class="mb-1 pb-4 h1_header">Home / About / Artwork</h6>
+           <hr>
+           <div class="row py-4">
+            <h1 class="col-md-4">Sales Tower</h1>
+            <p class="col-md-3">415 Mission St, San Francisco, CA 94105, USA</p>
+            <p class="col-md-2">info@salestown.com</p>
+            <div class="col-md-3"><a  style="color: #ffffff;" href="#!" role="button"
+              ><i class="fa fa-facebook-f fa-lg"></i
+            ></a>
+            
+            <!-- Twitter -->
+            <a class="px-2" style="color: #ffffff;" href="#!" role="button"
+              ><i class="fa fa-twitter fa-lg"></i
+            ></a>
+            
+            <!-- Google -->
+            <a class="px-2" style="color: #ffffff;" href="#!" role="button"
+              ><i class="fa fa-google fa-lg"></i
+            ></a>
+            
+            <!-- Instagram -->
+            <a class="px-2" style="color: #ffffff;" href="#!" role="button"
+              ><i class="fa fa-instagram fa-lg"></i
+            ></a></div>
+           </div>
+          </div>
+        </div>
+        </div>
+        </div>
       </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-  
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-    
-  </div>
-  <!-- End of .container -->
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+        // When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+// Get the navbar
+var navbar = document.getElementById("navbar");
+
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    navbar.classList.add("background")
+
+  } else {
+    navbar.classList.remove("sticky");
+    navbar.classList.remove("background")
+
+  }
+}
+
+        </script>
   </body>
 </html>
