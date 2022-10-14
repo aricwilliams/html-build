@@ -29,9 +29,9 @@
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <div class="overlay-content">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/artwork.html">ArtWork</a>
         <a href="#">Contact</a>
 
       </div>
@@ -43,7 +43,7 @@
           <ul class="navbar-nav me-auto align-items-center">
     
             <li class="nav-item sidebar">
-              <a href="#" class="navbar-brand ">SalesForceTower</a>
+              <a href="/index.html" class="navbar-brand ">SalesForceTower</a>
             </li>
            
           </ul>
@@ -58,10 +58,10 @@
   
       <section class="text-center ">
         <div class=" bg-image" style="background-image: url('/img/home-banner-image-2.jpg'); background-repeat: none; background-size: cover;">
-        <div class="mask" style="background-color: rgba(15, 16, 16, 0.516);">
-        <div class="d-flex container align-items-center h-100 ">
+        <div class="c mask" style="background-color: rgba(15, 16, 16, 0.516);">
+        <div class=" d-flex container align-items-center h-100 ">
           <div class="text-white col-md-12 ">
-            <h1 class="mb-1 h1_header">San Francisco’s Newest Landmark</h1>
+            <h1 class="mb-1 h1_header text-center h">San Francisco’s Newest Landmark</h1>
             
           </div>
         </div>
@@ -82,7 +82,7 @@
       </section>
       <section class="text-center section3">
         <div class=" bg-image facts-section" style="background-image: url('/img/fun-facts-background-1.jpg'); background-repeat: none; background-size: cover; ">
-        <div class="mask" style="background-color: rgba(15, 16, 16, 0.206);">
+        <div class="c mask" style="background-color: rgba(15, 16, 16, 0.206);">
         <div class="d-flex container align-items-center h-100 ">
           <div class="text-white col-md-12 ">
             <h1 class="mb-1 h1_header">Welcome to the Wapik</h1>
@@ -100,7 +100,7 @@
 
       <section class="text-center text-sm-start section4">
         <div class=" bg-image night-cta" style="background-image: url('/img/day-for-night-background-1.jpg'); background-repeat: none; background-size: cover;">
-        <div class="mask" style="background-color: rgba(45, 110, 112, 0.206);">
+        <div class="c mask" style="background-color: rgba(45, 110, 112, 0.206);">
         <div class="d-flex container align-items-center h-100 ">
           <div class="text-white col-md-6 ">
             <h1 class="mb-1 h1_header">Welcome to the Wapik</h1>
@@ -170,10 +170,10 @@
       </section>
       
       <section class="text-center footer-section">
-        <div class=" bg-image facts-section" style="background-image: url('/img/footer-background.jpg'); background-repeat: none; background-size: cover; ">
+        <div class="test bg-image facts-section" style="background-image: url('/img/footer-background.jpg'); background-repeat: none; background-size: cover; ">
         <div class="footer" style="background-color: rgba(15, 16, 16, 0.206);">
-        <div class="d-flex  align-items-center h-100 ">
-          <div class="text-white col-md-12 py-5">
+        <div class="d-flex  align-items-center ">
+          <div class=" text-white col-md-12 py-5">
             <h6 class="mb-1 pb-4 h1_header">Home / About / Artwork</h6>
            <hr>
            <div class="row py-4">
@@ -221,16 +221,16 @@ var navbar = document.getElementById("navbar");
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     navbar.classList.add("sticky")
     navbar.classList.add("background")
-
   } else {
     navbar.classList.remove("sticky");
     navbar.classList.remove("background")
-
   }
 }
 
