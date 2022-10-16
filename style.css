@@ -270,3 +270,49 @@ z-index: 30 !important;
     background-color: rgb(37, 37, 37);
     color: white;
 }
+
+/* background-image: linear-gradient(90deg,#04b4ff,#00d8a1);
+ */
+
+/* 
+
+.hero .h1{
+    animation: typing 2s , blink 0.5s infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 18ch;
+    border-right: 5px solid;
+    text-align: center;
+
+}
+
+@keyframes typing{
+    from{
+        width:0;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+
+.fadeIn{
+    animation: fadeIn 1s;
+    animation-fill-mode: both;
+}
+
+.wait-2s{
+    animation-delay: 2s;
+}
+
+.wait-3s{
+    animation-delay: 3s;
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+} */
