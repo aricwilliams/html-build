@@ -12,6 +12,11 @@ p{
 .c{
     height: 100px;
 }
+.footer-section a{
+    text-decoration: none;
+    color: #ffffff;
+    padding: 0px 10px;
+}
 .btn{
     cursor: pointer;
         border: 1px solid #ffffff;
@@ -64,6 +69,25 @@ a.navbar-brand{
 .white{
     color: #ffffff !important;
 }
+/* ///hero section//// */
+@media (min-width: 1890px) {
+   .mask{
+    min-height: 100vh;
+   }
+   h1{
+    font-size: 100px;
+   }
+   .section6 .text{
+    padding-top: 200px !important;
+}
+.footer-section .bg-image{
+    background-position: 0% -50%; 
+}
+}
+
+
+
+
 .section2 p{
     letter-spacing: 2px;
 }
@@ -89,6 +113,29 @@ left: 0%;
 /* .carousel-control-prev-icon{
 z-index: 30 !important;
 } */
+@media (max-width: 600px) {
+   
+    .desktop-view{
+        display: none !important;
+    }
+    .footer-section p{
+        text-align: center !important;
+        padding-top: 20px;
+    }
+    .footer-section .bg-image{
+        background-position: 50% 90%; 
+        background-repeat: none;
+        background-size: contain;
+    }
+}
+@media (min-width: 600px) {
+    .mobile-view{
+        display: none !important;
+    }
+    
+   
+}
+
 .section6 .text{
     padding-top: 90px;
 }
@@ -110,7 +157,7 @@ z-index: 30 !important;
 }
 
 .footer{
-    height: 300px;
+    min-height: 300px;
     width: 100%;
 }
 .footer-section h1{
@@ -119,7 +166,9 @@ z-index: 30 !important;
 .footer-section p{
     text-align: left;
 }
+.bg-image{
 
+}
 /* //////navbar///// */
 .overlay {
     height: 100%;
